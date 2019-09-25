@@ -23,7 +23,7 @@ class DisplayWindow : JFrame() {
 
     private fun createUI() {
         title = "Mandelbrot Set"
-        defaultCloseOperation = JFrame.EXIT_ON_CLOSE
+        defaultCloseOperation = EXIT_ON_CLOSE
         location = Point(50,50)
         contentPane.layout = BorderLayout()
 
@@ -68,7 +68,6 @@ class DisplayWindow : JFrame() {
         addMouseMotionListener( object : MouseMotionAdapter() {
 
             override fun mouseDragged(e: MouseEvent) {
-
                 val currentPoint = e.point
 
                 repaint()
