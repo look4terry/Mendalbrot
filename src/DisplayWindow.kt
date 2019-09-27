@@ -7,6 +7,7 @@ import java.awt.event.MouseMotionAdapter
 import java.awt.image.BufferedImage
 import javax.swing.JFrame
 
+// This is the is the real working class
 class DisplayWindow : JFrame() {
 
     private val resolution = 1000
@@ -17,10 +18,13 @@ class DisplayWindow : JFrame() {
     private var yEnd = -1.5
     private var zoomChanged = false
 
+    // Explicit constructor for the class, this is used when you have
+    // more than just initializing properties
     init {
         createUI()
     }
 
+    // Setup the window and display the first image
     private fun createUI() {
         title = "Mandelbrot Set"
         defaultCloseOperation = EXIT_ON_CLOSE

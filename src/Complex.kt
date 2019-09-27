@@ -3,9 +3,10 @@ import java.lang.Math.sqrt
 import kotlin.math.pow
 
 // Declare a class with its constructor all in one line
+// Notice
 class Complex(r: Double, i:Double) {
 
-    // Initialize the class variable, a val is like a constant, once assigned does not change
+    // Initialize the class variable, a val is a constant, once assigned does not change
     // Also notice the constant variable take on the type of r and i
     private val real = r
     private val imaginary = i
