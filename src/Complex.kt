@@ -31,6 +31,7 @@ class Complex(r: Double, i:Double) {
         val r = real * multiplier.real - imaginary * multiplier.imaginary
         val i = real * multiplier.imaginary + imaginary * multiplier.real
 
+        // Notice, this returns a new Complex() object
         return Complex(r, i)
     }
 }
